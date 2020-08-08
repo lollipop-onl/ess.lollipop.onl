@@ -7,12 +7,10 @@ type Props = {
   className?: string;
 };
 
-const AppNavbarComponent: FC<Props> = ({ className }) => {
-  return (
-    <div className={cn(styles.appNavbar, className)}>
-      <AppNavbarMenu />
-    </div>
-  );
-};
+const AppNavbarComponent: FC<Props> = ({ className }) => (
+  <div className={cn(styles.appNavbar, className)}>
+    <AppNavbarMenu />
+  </div>
+);
 
 export { AppNavbarComponent as AppNavbar };

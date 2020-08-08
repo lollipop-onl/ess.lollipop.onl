@@ -40,7 +40,23 @@ const AppNavbarMenuComponent: FC<Props> = ({ className }) => {
       children: [
         {
           label: 'ファイルを開く',
-          onClick: () => {
+          onClick: async () => {
+            if ('chooseFileSystemEntries' in window) {
+              const fileHandle = await window.chooseFileSystemEntries({
+                type: 'open-file',
+                accepts: [{
+                  description: 'Image file',
+                  mimeTypes: ['image/png'],
+                  extensions: ['png'],
+                }],
+              });
+
+              if (Array.isArray(fileHandle)) {}
+              else {
+                console.log(fileHandle);
+              }
+            }
+
             setActiveIndex(null);
           },
         },
