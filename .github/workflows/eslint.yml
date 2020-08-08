@@ -3,8 +3,9 @@ on:
   push:
     paths:
       - '**.js'
+      - '**.jsx'
       - '**.ts'
-      - '**.vue'
+      - '**.tsx'
       - '.eslintrc.yml'
 
 jobs:
