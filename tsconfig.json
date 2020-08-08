@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "esnext"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "strict": true,
+    "noImplicitAny": true,
+    "noEmit": true
+  }
+}
