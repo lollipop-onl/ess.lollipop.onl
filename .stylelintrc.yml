@@ -1,0 +1,17 @@
+extends:
+  - stylelint-config-standard
+  - stylelint-config-recess-order
+  - stylelint-config-styled-components
+processors:
+  - stylelint-processor-styled-components
+plugins:
+  - stylelint-scss
+rules:
+  string-quotes: single
+  no-empty-source: null
+  no-duplicate-selectors: null
+  selector-pseudo-class-no-unknown:
+    - true
+    - ignorePseudoClasses: [global]
+  selector-pseudo-element-no-unknown: null
+  at-rule-no-unknown: null
