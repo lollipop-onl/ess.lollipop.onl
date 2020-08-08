@@ -1,0 +1,21 @@
+.appNavbarMenuContext {
+  > .menu {
+    display: flex;
+    flex-direction: column;
+    background: rgba(#000, 0.7);
+    backdrop-filter: blur(3px);
+  }
+
+  > .menu > .button {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 8px 16px;
+  }
+
+  > .menu > .button:hover {
+    background: rgba(#fff, 0.2);
+  }
+}

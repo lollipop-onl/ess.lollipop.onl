@@ -14,7 +14,9 @@ $__make-it-happen: #e73825;
 // CSS Variables
 :root {
   --primary-color: #{$__reddish-gray};
+  --accent-color: #{$__old-building};
 }
 
 // カラー
 $_primary: var(--primary-color);
+$_accent: var(--accent-color);
