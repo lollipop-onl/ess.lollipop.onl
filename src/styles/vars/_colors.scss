@@ -1,6 +1,20 @@
+// カラーパレット
+$__black: #000;
+$__white: #fff;
+$__urbane-brown: #856e75;
+$__rose-beige: #c3b39c;
+$__greenish-gray: #aacbc1;
+$__neutral: #c5c8c4;
+$__old-building: #739488;
+$__ink-black: #4d4150;
+$__reddish-gray: #7f6c68;
+$__power-tie: #bb0009;
+$__make-it-happen: #e73825;
+
+// CSS Variables
 :root {
-  --primary-color: #F77825;
+  --primary-color: #{$__reddish-gray};
 }
 
-// カラーパレット
+// カラー
 $_primary: var(--primary-color);
